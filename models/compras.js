@@ -20,11 +20,10 @@ const CompraSchema = new Schema({
         type: String
     },
     total: {
-        type: Number,
-        default: 0,
+        type: String
     },
     cantidad: {
-        type: Number,
+        type: String
     },
    
 });

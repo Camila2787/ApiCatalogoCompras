@@ -31,7 +31,7 @@ const postCompras = async (req, res) => {
 };
 
 const putCompras = async (req, res) => {
-    const {nombreInsumo, fecha, Proveedor, numRecibo, IVA, total, cantidad,precioDolar} = req.body;
+    const {nombreInsumo, fecha, Proveedor, numRecibo, IVA, total, cantidad} = req.body;
     let mensaje = 'Actualización exitosa';
 
     try {
