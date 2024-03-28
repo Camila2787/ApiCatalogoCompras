@@ -19,11 +19,12 @@ const CompraSchema = new Schema({
     IVA: {
         type: String
     },
-    total: {
-        type: String
-    },
     cantidad: {
         type: String
+    },
+    total: {
+        type: String
+  
     },
    
 });
