@@ -54,7 +54,7 @@ const putCompras = async (req, res) => {
 };
 
 const deleteCompras = async (req, res) => {
-    const { numRecibo} = req.query;
+    const {nombreInsumo} = req.body;
     let mensaje = 'Eliminación Exitosa';
 
     try {
