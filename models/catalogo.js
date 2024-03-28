@@ -16,13 +16,13 @@ const CatalogoShema = new Schema({
         type: String
     },
     stock: {
-        type: Number
+        type: String
     },
     tamañoEstampado: {
-        type: Number
+        type: String
     },
     precioProducto: {
-        type: Number
+        type: String
     },
     tipoCatalogo: {
         type: String

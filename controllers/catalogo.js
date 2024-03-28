@@ -35,7 +35,8 @@ const putCatalogo = async (req, res) => {
     let mensaje = 'Actualización exitosa';
 
     try {
-        await Catalogo.findOneAndUpdate({ nombreProducto:nombreProducto}, {
+        await Catalogo.findOneAndUpdate({ color: color}, {
+            nombreProducto: nombreProducto,
             fechaRegistro: fechaRegistro,
             tipoEstampado: tipoEstampado,
             color: color,
@@ -55,11 +56,11 @@ const putCatalogo = async (req, res) => {
 };
 
 const deleteCatalogo = async (req, res) => {
-    const { nombreProducto} = req.query;
+    const { color} = req.body;
     let mensaje = 'Eliminación Exitosa';
 
     try {
-        await Catalogo.findOneAndDelete({nombreProducto: nombreProducto});
+        await Catalogo.findOneAndDelete({color: color});
     } catch (error) {
         mensaje = error;
     }
