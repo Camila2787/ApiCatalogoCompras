@@ -18,7 +18,7 @@ const CatalogoShema = new Schema({
     stock: {
         type: String
     },
-    tamañoEstampado: {
+    tamanoEstampado: {
         type: String
     },
     precioProducto: {
