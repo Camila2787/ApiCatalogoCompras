@@ -31,7 +31,7 @@ const postCatalogo = async (req, res) => {
 };
 
 const putCatalogo = async (req, res) => {
-    const {nombreProducto, fechaRegistro, tipoEstampado, color, stock, tamanoEstampado, precioProducto, tipoCatalogo, imagenProducto} = req.body;
+    const {nombreProducto, fechaRegistro, tipoEstampado, color, stock, tamanoEstampado, precioProducto, tipoCatalogo, imagenProducto, iva} = req.body;
     let mensaje = 'Actualización exitosa';
 
     try {
@@ -44,7 +44,8 @@ const putCatalogo = async (req, res) => {
             tamanoEstampado: tamanoEstampado,
             precioProducto: precioProducto,
             tipoCatalogo: tipoCatalogo,
-            imagenProducto: imagenProducto
+            imagenProducto: imagenProducto,
+            iva: iva
         });
     } catch (error) {
         mensaje = error;

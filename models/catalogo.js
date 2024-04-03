@@ -29,6 +29,10 @@ const CatalogoShema = new Schema({
     },
     imagenProducto: {
         type: String
+    },
+    iva: {
+        type: String
+
     }
 });
 
